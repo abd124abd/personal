@@ -3,16 +3,21 @@ html {
 	padding: 0;
 }
 
+body * {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #fbfbfb;
-	color: #595959;
+	background-color: #25303C;
+	color: white;
+	font-size: 22px;
 }
 
 a {
 	text-decoration: none;
-	color: #595959;
+	color: white;
 }
 
 #container {
@@ -25,35 +30,21 @@ a {
 	margin: 0;
 }
 
-header {
-	background-color: #595959;
-	height: 35px;
-}
-
 .info {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	font-size: 45px;
-	color: #595959;
+	margin: 0 auto 8px;
+	text-align: center;
 }
 
-.info li {
-	font-size: 16px;
-	margin-top: 0;
-	padding-left: 25px;
+.name {
+		margin-bottom: 19px;
 }
 
-.info li * {
-	font-size: 24px;
+.resume {
+	display: block;
+	margin-bottom: 14px;
 }
 
-.info * {
-	margin: 15px 0;
-}
-
-.info a:hover {
+.resume:hover {
 	text-decoration: underline;
 }
 
@@ -62,12 +53,14 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	width: 100vw;
-	height: 33vh;
 }
 
 .social-media-link {
-	font-size: 65px;
+	font-size: 24px;
+}
+
+.social-media-link {
+	padding: 0 35px;
 }
 
 @media screen and (max-width: 800px) {
@@ -86,17 +79,11 @@ header {
 }
 
 .fa {
-	padding: 0 35px;
+	padding: 10px;
+	border: 2px solid transparent;
 }
 
-.fa-github:hover {
-	color: #171516;
-}
-
-.fa-twitter:hover {
-	color: #00aced;
-}
-
-.fa-linkedin-square:hover {
-	color: #007bb6;
+.fa:hover {
+	border: 2px solid white;
+	border-radius: 50%;
 }
