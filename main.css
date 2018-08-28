@@ -87,3 +87,8 @@ a {
 	border: 2px solid white;
 	border-radius: 50%;
 }
+
+.blog {
+	margin-top: 25px;
+	text-decoration: underline;
+}
